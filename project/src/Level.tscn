@@ -70,16 +70,16 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [sub_resource type="ConvexPolygonShape2D" id=22]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
 [sub_resource type="ConvexPolygonShape2D" id=24]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
-points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
-
-[sub_resource type="TileSet" id=23]
+[sub_resource type="TileSet" id=26]
 0/name = "tilesheet_complete.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -236,19 +236,19 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "autotile_coord": Vector2( 12, 9 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 24 ),
+"shape": SubResource( 23 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 13, 9 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 25 ),
+"shape": SubResource( 24 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 0, 9 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 26 ),
+"shape": SubResource( 25 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -256,7 +256,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [node name="Level" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 23 )
+tile_set = SubResource( 26 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 458773, 1, 0, 458773, 2, 0, 458773, 3, 0, 458773, 4, 0, 458773, 5, 0, 458773, 6, 0, 458773, 7, 0, 458773, 8, 0, 458773, 9, 0, 458773, 10, 0, 458773, 11, 0, 458773, 12, 0, 458773, 13, 0, 458773, 14, 0, 458773, 15, 0, 458773, 65536, 0, 458773, 65551, 0, 458773, 131072, 0, 458773, 131087, 0, 458773, 196608, 0, 458773, 196623, 0, 458773, 262144, 0, 458773, 262159, 0, 458773, 327680, 0, 458773, 327690, 0, 524305, 327691, 0, 524305, 327692, 0, 524305, 327695, 0, 458773, 393216, 0, 458773, 393231, 0, 458773, 458752, 0, 458773, 458767, 0, 458773, 524288, 0, 458773, 524289, 0, 720901, 524290, 0, 720901, 524291, 0, 720901, 524292, 0, 720901, 524293, 0, 720901, 524294, 0, 720901, 524295, 0, 720901, 524301, 0, 720901, 524302, 0, 720901, 524303, 0, 458773, 589824, 0, 458773, 589825, 0, 589824, 589826, 0, 589824, 589827, 0, 589824, 589828, 0, 589824, 589829, 0, 589824, 589830, 0, 589824, 589831, 0, 589824, 589832, 0, 589824, 589833, 0, 589824, 589834, 0, 589824, 589835, 0, 589824, 589836, 0, 589824, 589837, 0, 589824, 589838, 0, 589824, 589839, 0, 458773 )
 
