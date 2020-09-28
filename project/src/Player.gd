@@ -1,8 +1,7 @@
 extends KinematicBody2D
 
 const GRAVITY = 7 # in pixels 
-const UNIT_SIZE = 64
-const JUMP = 7.25 * UNIT_SIZE # speed px/s
+const JUMP = 425
 
 var velocity = Vector2.ZERO
 
@@ -24,3 +23,5 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity)
 	
 	
+
+
