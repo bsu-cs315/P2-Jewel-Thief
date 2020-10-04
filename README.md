@@ -5,17 +5,21 @@ Play the game [here](https://bsu-cs315.github.io/P2-Jewel-Thief/)!
 
 ## How To Play
 
-Movement: To move left use the left arrow key or 'a' key. To move right use the right arrow key or 'd' key. To jump use the space bar
+Movement:  
+To move left use the left arrow key or 'a' key.  
+To move right use the right arrow key or 'd' key.  
+To jump use the space bar
 
-Objective: Collect the jewel and escape!
+Objective:  
+Collect the jewel and escape!
 
 
 ## Project Report
 
-Iteration 1 Reflection: 
+### Iteration 1 Reflection: 
 For the most part this iteration was pretty simple. I had a little trouble getting started, mainly because I wasn't sure where to begin exactly. A lot of the ideas in the iteration were new to me in the sense that this is the first time I had used the kinematic motion opposed to the physics engine that was used in iteration one. Needless to say, this shift took a little to get used to but after watching a few videos and reading through some of the documentation I feel I found a pretty good starting point. Overall I look forward to continue to develop this iteration smoothening it out and making it better! 
 
-Self-Assessment: 
+### Self-Assessment: 
 
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
 - [X] D-2: The repository contains a <code>README.md</code> file in its top-level directory.
