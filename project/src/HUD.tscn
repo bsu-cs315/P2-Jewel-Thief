@@ -10,10 +10,10 @@ anchor_left = 0.79
 anchor_top = 0.862
 anchor_right = 0.79
 anchor_bottom = 0.862
-margin_left = -405.827
-margin_top = -344.594
-margin_right = -285.827
-margin_bottom = -330.594
+margin_left = -635.954
+margin_top = -54.2803
+margin_right = -515.954
+margin_bottom = -40.2803
 text = "Jewels Collected: 0"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -25,9 +25,9 @@ anchor_top = 0.517
 anchor_right = 0.187
 anchor_bottom = 0.517
 margin_left = -20.4959
-margin_top = -139.852
+margin_top = 113.287
 margin_right = 106.504
-margin_bottom = -122.852
+margin_bottom = 130.287
 text = "Jewels Remaining: 3"
 __meta__ = {
 "_edit_use_anchors_": false
