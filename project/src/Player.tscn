@@ -7,14 +7,14 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -33,5 +33,13 @@ animation = "idle"
 position = Vector2( -6.10352e-05, -92.9356 )
 shape = SubResource( 2 )
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="PlayerCamera" type="Camera2D" parent="."]
 current = true
+limit_smoothed = true
+
+[node name="PlayerAurora" type="CPUParticles2D" parent="."]
+position = Vector2( 0, -82.2126 )
+emission_shape = 2
+emission_rect_extents = Vector2( 100, 100 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 5.0
