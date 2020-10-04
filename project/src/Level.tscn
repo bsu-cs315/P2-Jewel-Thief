@@ -1034,7 +1034,7 @@ position = Vector2( 1401.85, -105.778 )
 shape = SubResource( 111 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -852.412, 498.09 )
+position = Vector2( -863.055, 510.407 )
 
 [node name="GreenJewel" parent="." instance=ExtResource( 3 )]
 position = Vector2( 907.735, 460.776 )

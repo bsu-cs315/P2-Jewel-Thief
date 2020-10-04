@@ -1,27 +1,50 @@
 extends KinematicBody2D
 
-const GRAVITY = 7 # in pixels 
-const JUMP = 425
 
-var velocity = Vector2.ZERO
+const RUN_SPEED = 200
+const JUMP_SPEED = -700
+const GRAVITY = 1200
+
+var velocity = Vector2()
+var jumping = false 
 
 onready var animated_sprite := $AnimatedSprite
- 
 
-func _physics_process(_delta):
-	var direction := Vector2(Input.get_action_strength("move_right") - Input.get_action_strength("move_left"), 0)
-	var linear_velocity = direction * 100
-	var _ignored = move_and_slide(linear_velocity)
+func show_player_aurora(direction):
+	if direction.x == 0:
+		$PlayerAurora.hide()
+	else:
+		$PlayerAurora.show()
+
+
+func get_input():
+	velocity.x = 0
+	var right = Input.is_action_pressed("move_right")
+	var left = Input.is_action_pressed('move_left')
+	var jump = Input.is_action_just_pressed("jump")
+
+	if jump and is_on_floor():
+		jumping = true
+		velocity.y = JUMP_SPEED
+	if right:
+		velocity.x += RUN_SPEED
+	if left:
+		velocity.x -= RUN_SPEED
+
+
+func _physics_process(delta):
+	get_input()
+	
+	var move_left = Input.get_action_strength("move_left")
+	var move_right = Input.get_action_strength("move_right")
+	var direction := Vector2(move_right - move_left, 0)
 	animated_sprite.play("idle" if direction.x ==0 else "walk")
 	animated_sprite.scale.x = 1 if direction.x > 0 else -1
 	
-	velocity.y += GRAVITY
+	show_player_aurora(direction)
 	
-	if(Input.is_action_just_pressed("jump")):
-		velocity.y -= JUMP
+	velocity.y += GRAVITY * delta
 	
-	velocity = move_and_slide(velocity)
-	
-	
-
-
+	if jumping and is_on_floor():
+		jumping = false
+	velocity = move_and_slide(velocity, Vector2(0, -1))
