@@ -67,7 +67,7 @@ All images used come from [Kenney.nl](https://www.kenney.nl).
 The [Absatract platformer](https://www.kenney.nl/assets/abstract-platformer) pack and the [Platformer Pack Redux](https://www.kenney.nl/assets/platformer-pack-redux) were used.
 Both of which are licensed under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.  
   
-  All Audio used is from [freesound](freesound.org)  
+  All Audio used is from [freesound](https://freesound.org/)  
   All of which is licensed under the [Attribution License](https://creativecommons.org/licenses/by/3.0/)  
   [Title Screen Music](https://freesound.org/people/Sunsai/sounds/415805/)  
   [Level Music](https://freesound.org/people/zagi2/sounds/487699/)  
