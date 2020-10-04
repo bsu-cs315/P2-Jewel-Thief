@@ -71,6 +71,6 @@ Both of which are licensed under the [CC0 1.0 Universal](https://creativecommons
   All of which is licensed under the [Attribution License](https://creativecommons.org/licenses/by/3.0/)  
   [Title Screen Music](https://freesound.org/people/Sunsai/sounds/415805/)  
   [Level Music](https://freesound.org/people/zagi2/sounds/487699/)  
-  [Jump Sound Effect](https://freesound.org/people/jalastram/sounds/386657/)
+  [Jump Sound Effect](https://freesound.org/people/jalastram/sounds/386657/)  
   [Jewel Collected Sound Effect](https://freesound.org/people/Fupicat/sounds/471936/)  
   [End Screen Musin]( https://freesound.org/people/wi-photos/sounds/489554/)
