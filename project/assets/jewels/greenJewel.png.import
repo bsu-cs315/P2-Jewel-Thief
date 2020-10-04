@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/greenJewel.png-ec27630313b6d0e129b120e301fe56fc.stex"
+path="res://.import/greenJewel.png-4e87d54669a6961b714a9edf955d8d56.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/greenJewel.png"
-dest_files=[ "res://.import/greenJewel.png-ec27630313b6d0e129b120e301fe56fc.stex" ]
+source_file="res://assets/jewels/greenJewel.png"
+dest_files=[ "res://.import/greenJewel.png-4e87d54669a6961b714a9edf955d8d56.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redJewel.png-267755ecc71f4198d870d2cae019115c.stex"
+path="res://.import/lockRedBottom.png-d89e6a4d2b639add5569f980f3d0c1eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/redJewel.png"
-dest_files=[ "res://.import/redJewel.png-267755ecc71f4198d870d2cae019115c.stex" ]
+source_file="res://assets/lockRedBottom.png"
+dest_files=[ "res://.import/lockRedBottom.png-d89e6a4d2b639add5569f980f3d0c1eb.stex" ]
 
 [params]
 
