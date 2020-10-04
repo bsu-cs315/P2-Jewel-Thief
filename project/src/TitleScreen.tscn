@@ -1,3 +1,93 @@
-[gd_scene format=2]
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/player/alienGreen_walk2.png" type="Texture" id=1]
+[ext_resource path="res://assets/jewels/yellowJewel.png" type="Texture" id=2]
+[ext_resource path="res://assets/jewels/greenJewel.png" type="Texture" id=3]
+[ext_resource path="res://assets/jewels/redJewel.png" type="Texture" id=4]
+[ext_resource path="res://assets/set3_background.png" type="Texture" id=5]
+[ext_resource path="res://assets/fonts/SpaceGrotesk-Bold.otf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+outline_size = 1
+outline_color = Color( 0.160784, 0.192157, 0.580392, 1 )
+font_data = ExtResource( 6 )
 
 [node name="TitleScreen" type="CanvasLayer"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 548.865, 308.625 )
+scale = Vector2( 1.9234, 1.33645 )
+texture = ExtResource( 5 )
+
+[node name="Player" type="TextureRect" parent="."]
+margin_left = 187.923
+margin_top = 79.424
+margin_right = 327.923
+margin_bottom = 274.424
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedJewel" type="TextureRect" parent="."]
+anchor_left = 0.432
+anchor_top = 0.427
+anchor_right = 0.432
+anchor_bottom = 0.427
+margin_left = 126.632
+margin_top = -181.379
+margin_right = 172.632
+margin_bottom = -141.379
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowJewel" type="TextureRect" parent="."]
+margin_left = 508.62
+margin_top = 148.296
+margin_right = 548.62
+margin_bottom = 188.296
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenJewel" type="TextureRect" parent="."]
+margin_left = 629.574
+margin_top = 147.881
+margin_right = 669.574
+margin_bottom = 187.881
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_right = 0.062
+anchor_bottom = 0.033
+margin_left = 336.088
+margin_top = 453.992
+margin_right = 556.6
+margin_bottom = 514.192
+custom_fonts/font = SubResource( 2 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 170.423
+margin_top = 313.904
+margin_right = 837.423
+margin_bottom = 431.904
+custom_fonts/font = SubResource( 1 )
+text = "Jewel Thief"
+__meta__ = {
+"_edit_use_anchors_": false
+}
