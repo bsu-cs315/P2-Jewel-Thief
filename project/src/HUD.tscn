@@ -7,8 +7,8 @@
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 238.864, 451.293 )
-scale = Vector2( 0.850927, 0.71877 )
+position = Vector2( 232.994, 448.942 )
+scale = Vector2( 0.559942, 0.419267 )
 texture = ExtResource( 2 )
 
 [node name="JewelsCollected" type="Label" parent="."]
