@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=2]
+[gd_scene load_steps=120 format=2]
 
 [ext_resource path="res://assets/tilesheet_complete.png" type="Texture" id=1]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/RedJewel.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/lockRedBottom.png" type="Texture" id=5]
 [ext_resource path="res://assets/set2_background.png" type="Texture" id=6]
+[ext_resource path="res://src/YellowJewel.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConcavePolygonShape2D" id=1]
 segments = PoolVector2Array( 0, 0, 64, 0, 64, 0, 64, 64, 64, 64, 0, 64, 0, 64, 0, 0 )
@@ -1042,15 +1043,18 @@ position = Vector2( 907.735, 460.776 )
 [node name="RedJewel" parent="." instance=ExtResource( 4 )]
 position = Vector2( -31.0326, 34.1051 )
 
-[node name="SecretFloor" type="Sprite" parent="."]
+[node name="YellowJewel" parent="." instance=ExtResource( 7 )]
+position = Vector2( 641.45, -372.652 )
+
+[node name="SkyFloor" type="Sprite" parent="."]
 position = Vector2( 512.177, -287.945 )
 scale = Vector2( 15.6957, 0.996172 )
 texture = ExtResource( 5 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="SecretFloor"]
+[node name="StaticBody2D" type="StaticBody2D" parent="SkyFloor"]
 position = Vector2( 0.580841, 0.092926 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SecretFloor/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SkyFloor/StaticBody2D"]
 position = Vector2( -0.358168, -3.017 )
 shape = SubResource( 112 )
 one_way_collision = true
