@@ -1,9 +1,14 @@
 extends Area2D
 
-var hidden = false
+var is_hidden = false
 
-func _on_RedJewel_body_entered(_body):
-	if !hidden:
+
+func _on_RedJewel_body_entered(body):
+	if !is_hidden:
+		HUDManager.update_HUD(body)
 		hide()
-		hidden = true
-		print("Jewel Collected!")
+		is_hidden = true
+
+
+
+
