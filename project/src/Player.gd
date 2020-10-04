@@ -25,6 +25,7 @@ func get_input():
 
 	if jump and is_on_floor():
 		jumping = true
+		$JumpingSound.play()
 		velocity.y = JUMP_SPEED
 	if right:
 		velocity.x += RUN_SPEED
