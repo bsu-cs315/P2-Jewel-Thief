@@ -1041,6 +1041,7 @@ shape = SubResource( 111 )
 position = Vector2( -863.055, 510.407 )
 
 [node name="SkyFloor" type="Sprite" parent="."]
+visible = false
 position = Vector2( 512.177, -287.945 )
 scale = Vector2( 15.6957, 0.996172 )
 texture = ExtResource( 5 )
