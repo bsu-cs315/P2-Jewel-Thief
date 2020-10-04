@@ -53,6 +53,11 @@ For the most part this iteration was pretty simple. I had a little trouble getti
 - [ ] ⭐ Include parallax scrolling in the background.
 - [ ] ⭐ Include tiles that can be passed in one direction, such as being able to jump up through a tile and land atop it.
 
+### Juice:
+#### 1st example: I added a simple aurora around the character when the character is moving. I implemented this with the CPUParticles2D node in godot. I got this idea from the juice it or lose it video where they used a trail to follow the ball in thier game. I liked the idea and thought it added a nice touch to a moving object and decided to try and add a trail to my character, after fooling around for a little I thought the aurora style was really cool so I stuck with it. 
+
+#### 2nd example: 
+
 ## Third-Party Assets
 
 All images used come from [Kenney.nl](https://www.kenney.nl).
