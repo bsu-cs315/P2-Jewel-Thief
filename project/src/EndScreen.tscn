@@ -1,3 +1,81 @@
-[gd_scene format=2]
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://src/EndScreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/SpaceGrotesk-Bold.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/jewels/greenJewel.png" type="Texture" id=3]
+[ext_resource path="res://assets/jewels/redJewel.png" type="Texture" id=4]
+[ext_resource path="res://assets/set2_background.png" type="Texture" id=5]
+[ext_resource path="res://assets/jewels/yellowJewel.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=3]
+size = 68
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 2 )
 
 [node name="EndScreen" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 527.088, 299.231 )
+scale = Vector2( 2.86041, 2.41469 )
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 133.643
+margin_top = 170.939
+margin_right = 766.643
+margin_bottom = 233.939
+custom_fonts/font = SubResource( 3 )
+text = "All Jewels Collected!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayAgain" type="Button" parent="."]
+margin_left = 362.785
+margin_top = 319.684
+margin_right = 601.785
+margin_bottom = 389.684
+custom_fonts/font = SubResource( 1 )
+text = "Play Again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnToTitle" type="Button" parent="."]
+margin_left = 329.0
+margin_top = 409.216
+margin_right = 660.0
+margin_bottom = 479.216
+custom_fonts/font = SubResource( 2 )
+text = "Return to Title"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedJewels" type="CPUParticles2D" parent="."]
+position = Vector2( 189.587, 180.263 )
+texture = ExtResource( 4 )
+emission_shape = 2
+emission_rect_extents = Vector2( 100, 100 )
+
+[node name="GreenJewels" type="CPUParticles2D" parent="."]
+position = Vector2( 711.727, 177.155 )
+texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 100, 100 )
+
+[node name="YellowJewels" type="CPUParticles2D" parent="."]
+position = Vector2( 416.469, 164.723 )
+texture = ExtResource( 6 )
+emission_shape = 2
+emission_rect_extents = Vector2( 100, 100 )
+[connection signal="pressed" from="PlayAgain" to="." method="_on_PlayAgain_pressed"]
+[connection signal="pressed" from="ReturnToTitle" to="." method="_on_ReturnToTitle_pressed"]
