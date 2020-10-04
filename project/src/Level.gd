@@ -13,3 +13,5 @@ func _process(_delta):
 func check_for_gameover():
 	if HUDManager.jewels_collected == 3:
 		var _ignored = get_tree().change_scene("res://src/EndScreen.tscn")
+
+

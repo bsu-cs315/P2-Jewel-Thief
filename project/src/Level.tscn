@@ -1,4 +1,4 @@
-[gd_scene load_steps=122 format=2]
+[gd_scene load_steps=123 format=2]
 
 [ext_resource path="res://assets/tilesheet_complete.png" type="Texture" id=1]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/YellowJewel.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Level.gd" type="Script" id=8]
 [ext_resource path="res://src/HUD.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/audio/487699__zagi2__correspondence-loop.wav" type="AudioStream" id=10]
 
 [sub_resource type="ConcavePolygonShape2D" id=1]
 segments = PoolVector2Array( 0, 0, 64, 0, 64, 0, 64, 64, 64, 64, 0, 64, 0, 64, 0, 0 )
@@ -1064,3 +1065,7 @@ position = Vector2( -2.13031, 40.4761 )
 position = Vector2( 568.795, -360.024 )
 
 [node name="HUD" parent="." instance=ExtResource( 9 )]
+
+[node name="LevelMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
