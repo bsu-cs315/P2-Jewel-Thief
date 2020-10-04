@@ -3,8 +3,6 @@ extends Area2D
 var is_hidden = false
 
 
-
-
 func _on_YellowJewel_body_entered(body):
 	if !is_hidden:
 		$JewelCollectedSound.play()

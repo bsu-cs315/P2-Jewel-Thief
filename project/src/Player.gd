@@ -1,6 +1,5 @@
 extends KinematicBody2D
 
-
 const RUN_SPEED = 200
 const JUMP_SPEED = -700
 const GRAVITY = 1200
@@ -9,6 +8,7 @@ var velocity = Vector2()
 var jumping = false 
 
 onready var animated_sprite := $AnimatedSprite
+
 
 func show_player_aurora(direction):
 	if direction.x == 0:
