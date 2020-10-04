@@ -1,39 +1,50 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/HUD.gd" type="Script" id=1]
 [ext_resource path="res://assets/BlackBox.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/SpaceGrotesk-Bold.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+font_data = ExtResource( 3 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 232.994, 448.942 )
+position = Vector2( 232.994, 448.511 )
 scale = Vector2( 0.559942, 0.419267 )
 texture = ExtResource( 2 )
 
-[node name="JewelsCollected" type="Label" parent="."]
-anchor_left = 0.79
-anchor_top = 0.862
-anchor_right = 0.79
-anchor_bottom = 0.862
-margin_left = -638.96
-margin_top = -57.2
-margin_right = -518.96
-margin_bottom = -43.2
+[node name="JewelsCollected" type="Label" parent="Sprite"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -247.5
+margin_top = -82.6489
+margin_right = -18.5
+margin_bottom = -57.6489
+custom_fonts/font = SubResource( 1 )
 text = "Jewels Collected: 0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="JewelsRemaining" type="Label" parent="."]
-anchor_left = 0.187
-anchor_top = 0.517
-anchor_right = 0.187
-anchor_bottom = 0.517
-margin_left = -21.488
-margin_top = 109.8
-margin_right = 105.512
-margin_bottom = 126.8
+[node name="JewelsRemaining" type="Label" parent="Sprite"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -252.5
+margin_top = -135.121
+margin_right = -13.5
+margin_bottom = -110.121
+custom_fonts/font = SubResource( 2 )
 text = "Jewels Remaining: 3"
 __meta__ = {
 "_edit_use_anchors_": false
